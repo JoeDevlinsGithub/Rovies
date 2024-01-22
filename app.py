@@ -4,6 +4,7 @@ from thefuzz import fuzz
 import argparse
 import shlex
 import asyncio
+import os
 
 def parse_range(range_str, is_float=False):
     if '-' in range_str:
@@ -233,4 +234,4 @@ async def usage_command(ctx):
     await asyncio.sleep(10)
     await response.delete()
 # Run the bot
-bot.run('MTE4ODY3ODIwNzcyNjE3MDE1Mg.Gk18WW.n05a7-Euhsk5tt4OfjkM--EEdMIUV5cDiBRFBs')
+bot.run(os.environ["DISCORD_TOKEN"])

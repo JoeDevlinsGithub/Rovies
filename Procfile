@@ -1,1 +1,1 @@
-worker: python searchable.py
+worker: python3 app.py
